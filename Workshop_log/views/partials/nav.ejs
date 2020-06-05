@@ -1,0 +1,47 @@
+<nav>
+    <header>
+        <div id="header">
+            <div id="headerElements">
+                <a href="index"><img src="./assets/images/peepLogo.jpg" alt="My application logo" /></a>
+                <p>Workshop Log</p>
+                <a class="subbrand">Meet & Learn</a>
+
+
+                <% if(typeof sessionData !== "undefined") {
+                 if(sessionData.user !== undefined && sessionData.user !== null) {%>
+                   <a class="login" href="newConnection">Start a new workshop &nbsp;&nbsp;|</a>
+                   <a class="login" href="logout">Logout &nbsp;&nbsp;</a>
+                <% } else {%>
+                  <a class="login" href="login">Start a new workshop &nbsp;&nbsp;|</a>
+                  <a class="login" href="login">Sign Up &nbsp;&nbsp;|</a>
+                    <a class="login" href="login">Login</a>
+                <% };
+              } else { %>
+                <a class="login" href="login">Start a new workshop &nbsp;&nbsp;|</a>
+                <a class="login" href="login">Sign Up &nbsp;&nbsp;|</a>
+                <a class="login" href="login">Login</a>
+              <% }; %>
+
+
+            </div>
+            </div>
+            <% if(typeof sessionData !== "undefined") {
+             if(sessionData.user !== undefined && sessionData.user !== null) {%>
+               <div id="subheader">
+                 <a class="conHead" href="connections">Workshops</a>
+                 <a class="conHead" href="userConnections"><%= sessionData.user.firstname %>'s Workshops</a>
+                   <a class="userWelcome"> Welcome <%= sessionData.user.firstname %> </a>
+               </div>
+            <% } else {%>
+              <div id="subheader">
+                  <a class="conHead" href="connections">Workshops</a>
+              </div>
+            <% };
+          } else { %>
+            <div id="subheader">
+                <a class="conHead" href="connections">Workshops</a>
+            </div>
+          <% }; %>
+
+    </header>
+</nav>

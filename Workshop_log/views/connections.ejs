@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header'); -%>
+</head>
+
+<body>
+    <%- include('partials/nav'); -%>
+
+    <section class="description">
+      <% sessionData.categoryTopics.forEach(function(topic) { %>
+        <h1><%= topic %></h1>
+        <% sessionData.connections.forEach(function(connection) {
+            if (topic === (connection.Topic)) { %>
+        <ul>
+          <li>
+              <a class="workshopSublinks" href="/connection?connectionID=<%= connection.workshopId%>">
+                  <%= connection.Name %>
+              </a>
+          </li>
+        </ul>
+        <% };%>
+        <% }); %>
+        <% }); %>
+    </section>
+
+  <%- include('partials/footer'); -%>
+</body>

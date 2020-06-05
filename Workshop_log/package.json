@@ -1,0 +1,23 @@
+{
+  "name": "milestone2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "milestone"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.4.0",
+    "mongoose": "^5.9.9",
+    "password-validator": "^5.0.3",
+    "random": "^2.2.0"
+  }
+}

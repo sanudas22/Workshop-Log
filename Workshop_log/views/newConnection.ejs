@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./partials/header'); -%>
+  </head>
+  <body>
+      <%- include('partials/nav'); -%>
+    <div id="formdiv">
+      <% if(errors){%>
+    <p class='error'>
+      Please fix the below errors:<br>
+    </p>
+        <%errors.forEach(function(error){%>
+          <a class='error'>
+            *<%=error.msg %><br>
+          </a>
+            <%});  } %>
+    <form id="connection-form" method="POST" action="/connections">
+    <br><br>  <label>Workshop Category</label>
+      <input type="text" placeholder="Workshop Category" name="topic" required>
+      <label>Workshop Name</label>
+      <input type="text" placeholder="Your full name" name="name" required>
+      <label>Details</label>
+      <textarea placeholder="Add some description" rows="4" cols="50" name="details" required> </textarea>
+      <label>Venue</label>
+      <input type="text" placeholder="Venue for the workshop" name="venue" required>
+      <label>When</label>
+      <input type="date" name="date" required>
+      <label for="time">Time  </label>
+      <input type="time" id="time" name="time" required>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+    <%- include('partials/footer'); -%>
+  </body>
+</html>

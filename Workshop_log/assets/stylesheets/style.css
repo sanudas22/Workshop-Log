@@ -1,0 +1,334 @@
+@charset "UTF-8";
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: auto;
+    margin: 0px;
+    height: 100%;
+}
+
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    position: relative;
+}
+
+header div#headerElements img {
+    width: 175px;
+    height: 110px;
+    padding-left: 2cm;
+    top: -20px;
+}
+
+header div#headerElements p {
+    margin: 0px;
+    display: inline;
+    padding-left: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 35px;
+    top: -15px;
+}
+
+a.subbrand{
+    font-weight: 200;
+    padding-top: 0px;
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-left: 1px;
+    left: -27px;
+    display: inline;
+}
+
+a.login{
+    font-weight: 200;
+    padding-top: 0px;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-left: 1px;
+    display: inline;
+    top: -100px;
+    right: -25px;
+    color:  #094d7a;
+    text-decoration: none;
+}
+
+a.foot {
+  text-decoration: none;
+  color: black;
+}
+
+header div#headerElements {
+    font-family: Geneva;
+    font-weight: 450;
+    font-size: 5em;
+    color:  #194640;
+    padding-top: 30px;
+}
+
+header div#header {
+    height: 150px;
+    background-color: rgb(171, 220, 243);
+}
+
+section div#homeDesc {
+    display: block;
+}
+
+header div#subheader {
+    height: 40px;
+    background-color: rgb(114, 179, 209);
+    margin-top: 2px;
+    padding-top: 10px;
+    display: block;
+}
+
+section div#connectionContent p{
+    font-family:'OpenSansLight',Arial,sans-serif;
+    margin: 0px;
+    display: block;
+    font-size: 15px;
+    padding-top: 0.5cm;
+    line-height: 1.5em;
+    padding-left: 3cm;
+    padding-right: 3cm;
+}
+section div#connectionContent img{
+    width: 700px;
+    height: 300px;
+    padding-top: 0.5cm;
+    padding-left: 6cm;
+    display: inline;
+}
+
+.description {
+    display: block;
+    width: auto;
+    overflow: visible;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 325;
+    font-size: 20px;
+    background-color: rgb(235, 236, 238);
+    position: relative;
+    margin-top: -0.5cm;
+    height: 220%;
+}
+
+.workshopSublinks {
+    font-family:'OpenSansLight',Arial,sans-serif;
+    font-weight: 200;
+    padding-left: 120px;
+    position: relative;
+    font-size: 20px;
+    margin-left: 1px;
+    display: block;
+    color:  #a3961b;
+}
+
+ul {
+  list-style-type: none;
+ }
+
+ .userWelcome {
+   font-weight: 200;
+   float: right;
+   color:  #0f5d7c;
+   font-size: 20px;
+   padding-right: 2%;
+ }
+
+.conHead {
+  font-size: 20px;
+  float: left;
+  padding-left: 2%;
+  color: #0f5d7c;
+}
+
+h2 {
+  padding-left: 3cm;
+
+}
+
+h1 {
+    font-family:'BebasNeueBook',Arial,sans-serif;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-left: 100px;
+    position: relative;
+    font-size: 25px;
+    margin-left: 1px;
+    display: block;
+    text-decoration: none;
+    color:  #443e04;
+    text-transform: uppercase;
+}
+
+footer {
+    font-family: Verdana, Geneva, sans-serif;
+    clear: both;
+    display: block;
+    background-color: rgb(114, 179, 209);
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #141414;
+    padding: 10px 0px 10px 0px;
+    color: rgb(0, 3, 5);
+}
+
+.yesButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    top: 0px;
+    width: 120px;
+    margin-left: 3cm;
+}
+
+.noButton {
+    background-color: rgb(184, 27, 27);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    top: 0px;
+    width: 120px;
+}
+
+.maybeButton {
+    background-color: rgb(15, 19, 73);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.manageButtons {
+    background-color: rgb(69, 150, 150);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.saved {
+    font-family:'OpenSansLight',Arial,sans-serif;
+    font-weight: 200;
+    padding-left: 120px;
+    position: relative;
+    font-size: 20px;
+    margin-left: 1px;
+    display: inline;
+    color:  #065183;
+    text-transform: uppercase;
+}
+
+
+.main {
+    font-family: sans-serif;
+    text-align: center;
+    text-align: justify;
+    padding: 20px;
+    left: 3cm;
+    right: 5cm;
+    font-size: 18px;
+    display: block;
+    margin-right: 8cm;
+}
+
+#registrations {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    padding-left: 3cm;
+    margin-left: 3cm;
+    margin-top: 2cm;
+  }
+
+  #registrations td, #registrations th {
+    border: 1px solid rgb(23, 3, 39);
+    padding: 2px;
+  }
+
+  #registrations tr:nth-child(even){background-color: #f2f2f2;}
+
+#registrations tr:hover {background-color: #ddd;}
+
+#registrations th {
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(105, 193, 199);
+  color: white;
+}
+input[type=text],[type=date],[type=time],[type=password], select {
+  text-align: left;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  display: block;
+  background-color:  #065183;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea {
+  display: block;
+  height: 100px;
+  width: 600px;
+}
+.formdiv {
+  display: block;
+  text-align: center;
+}
+
+.container {
+  padding: 16px;
+}
+.error {
+    color: red;
+}

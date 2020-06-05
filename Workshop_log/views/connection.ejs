@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header'); -%>
+</head>
+
+<body>
+    <%- include('partials/nav'); -%>
+
+    <section class="description">
+        <h2><%= sessionData.connection.name %></h2>
+        <div id="connectionContent">
+            <a><img src="./assets/images/wst.jpg" alt="Workshop logo" /></a>
+            <p><%= sessionData.connection.details %></p><br>
+            <p>Date: <%= sessionData.connection.date %></p>
+            <p>Time: <%= sessionData.connection.time %></p>
+            <p>Venue:  <%= sessionData.connection.venue %></p>
+
+        </div>
+        <a class="conHead">Confirm you seat!!</a><br>
+        <button class = "yesButton" onclick="location.href='/userConnections?action=Yes&id=<%= sessionData.connection.workshopId%>'">Yes</button>
+        <button class = "noButton" onclick="location.href='/userConnections?action=No&id=<%= sessionData.connection.workshopId%>'">No</button>
+        <button class = "maybeButton" onclick="location.href='/userConnections?action=Maybe&id=<%= sessionData.connection.workshopId%>'">May be</button>
+    </section>
+
+    <%- include('partials/footer'); -%>
+</body>

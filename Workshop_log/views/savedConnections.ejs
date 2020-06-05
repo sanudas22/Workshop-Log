@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header'); -%>
+</head>
+
+<body>
+    <%- include('partials/nav'); -%>
+
+    <section class="description">
+      <h1>My Workshops</h1>
+        <table id="registrations">
+        <tr>
+        <% if(sessionData.userconnections.length === 0) { %>
+        <th>  <p class = "conHead">No connections to display</p> </th>
+        <% } else{ %>
+        <th>Category </th>
+        <th>Workshop Name </th>
+        <th>RSVP </th>
+        <th>Update Entry </th>
+        <th>Delete Entry </th>
+        </tr>
+        <% for(let i = 0; i < sessionData.userconnections.length; i++) { %>
+        <tr>
+            <td><a class="conHead" ><%= sessionData.userconnections[i].category %></a></td>
+            <td><a class="conHead" ><%= sessionData.userconnections[i].name %></a></td>
+            <td><a class="conHead" ><%= sessionData.userconnections[i].rsvp %></a></td>
+            <td><button class = "manageButtons" onclick="location.href='/connection?connectionID=<%= sessionData.userconnections[i].connectionId %>'">Update</button></td>
+            <td><button class = "manageButtons" onclick="location.href='/userConnections?delete=<%= sessionData.userconnections[i].connectionId %>&id=<%= sessionData.userconnections[i].id %>'">Delete</button></td>
+        </tr>
+        <% } %>
+        <% } %>
+        </table>
+    </section>
+
+    <%- include('partials/footer'); -%>
+</body>
